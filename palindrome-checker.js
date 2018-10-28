@@ -1,3 +1,4 @@
+// Function will return true if the given string is a palindrome. Otherwise, it will return false.
 function palindrome(str) {
   // Remove non-alphanumeric characters
   str = str.replace(/[^0-9a-z]/gi, '').toLowerCase();
@@ -5,8 +6,7 @@ function palindrome(str) {
   // Make variable for first half of string
   let firstHalf = str.substr(0, str.length/2);
   
-  /* Make variable for last half of string.
-  Check if number of characters in string is an even number.
+  /* Make variable for last half of string, check if number of characters in string is an even number.
   If odd, add 1 to index in order to exclude character in the middle of the string */
   let lastHalf = str.length % 2 === 0 ? str.substr(str.length/2) : str.substr(str.length/2+1);
   
